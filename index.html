@@ -150,7 +150,7 @@
       <section class="main-page">
         <div class="container">
           <h1 class="main-page-text">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-service-button">
+          <button type="button" class="order-service-button" data-modal-open>
             Order Service
           </button>
         </div>
@@ -704,7 +704,7 @@
     </main>
     <!-- #region footer-->
     <footer class="page-footer">
-      <!-- <div class="container">
+      <div class="container">
         <div class="footer-main">
           <a href="./index.html" class="logo logo-footer"
             >Web<span class="logo-span-footer">Studio</span></a
@@ -767,13 +767,13 @@
             </button>
           </form>
         </div>
-      </div> -->
+      </div>
     </footer>
     <!-- #endregion footer-->
     <!-- #region backdrop-->
-    <!-- <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -848,15 +848,18 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="privacy-policy"> Privacy Policy</a></label
+              <span
+                >I accept the terms and conditions of the
+                <a href="" class="privacy-policy"> Privacy Policy</a></span
+              ></label
             >
           </div>
           <button type="submit" class="submit-btn">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- #endregion backdrop-->
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
