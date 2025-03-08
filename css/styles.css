@@ -473,7 +473,7 @@ button {
 .adv-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 72px;
+    gap: 72px 24px;
 }
 
 .adv-list:last-child {
@@ -782,6 +782,7 @@ footer .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 72px;
 }
 
 .footer-text {
@@ -790,6 +791,9 @@ footer .container {
     color: #FFFFFF;
     letter-spacing: 0.02em;
     max-width: 288px;
+}
+
+.social-media-footer {
     margin-bottom: 72px;
 }
 
@@ -798,7 +802,6 @@ footer .container {
     gap: 16px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 72px;
 }
 
 .social-media-text {
@@ -919,8 +922,8 @@ footer .container {
 @media only screen and (min-width: 768px) {
    footer .container{
     align-items: baseline;
-    justify-content: center;
     column-gap: 24px;
+    width: 584px;
   }
 
   .footer-main {
@@ -959,7 +962,9 @@ footer .container {
 @media only screen and (min-width: 1158px) {
 
 footer .container {
-    gap: 0;
+    gap: unset;
+    justify-content: center;
+    width: 1440px;
 }
 
 .page-footer {
@@ -1139,6 +1144,7 @@ footer .container {
        margin-bottom: 24px;
     display: flex;
         align-items: center;
+        flex-shrink: 0;
    }
 
    .privacy-label {
