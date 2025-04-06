@@ -649,9 +649,9 @@ button {
     row-gap: 64px;
   }
 
-  .team-card img {
+  /* .team-card img {
       width: 100%;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1158px) {
